@@ -72,5 +72,5 @@ ani = animation.FuncAnimation(fig, scope.update, emitter, interval=10,
                               blit=True)
 
 plt.title('Potentiometro')
-#plt.show()
+plt.show()
 
