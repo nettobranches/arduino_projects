@@ -2,7 +2,7 @@ from pyfirmata import Arduino, util
 from time import sleep
 import os
 
-port = 'COM3'
+port = 'COM4'
 board = Arduino(port)
 sleep(5)
 it = util.Iterator(board)
