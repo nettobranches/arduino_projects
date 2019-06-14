@@ -36,14 +36,6 @@ def onExitButtonPress():
     print ("Done.")
     sys.exit()
 
-def onButtonPress():
-    #sleep(1)
-    a3.write(1)
-
-def offButtonPress():
-    #sleep(1)
-    a3.write(0)
-
 # Associate port and board with pyFirmata
 port = 'COM3'
 board = pyfirmata.Arduino(port)
@@ -82,15 +74,5 @@ exitButton = tkinter.Button(top,
                             text="Exit",
                             command=onExitButtonPress)
 exitButton.grid(column=3, row=2)
-
-onButton = tkinter.Button(top,
-                             text="On",
-                             command=onButtonPress)
-onButton.grid(column=1, row=3)
-
-offButton = tkinter.Button(top,
-                             text="Off",
-                             command=offButtonPress)
-offButton.grid(column=2, row=3)
 
 top.mainloop()
